@@ -1,26 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/login.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="../css/login.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap');
+  </style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap');
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Login</h1>
-        <form id="loginForm" onsubmit="validateForm(event)">
-          <div class="form-group">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-          </div>
-          <div class="form-group">
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-          </div>
-          <button type="submit">Login</button>
-        </form>
-        <div id="message"></div>
+  <div class="container">
+    <div class="nav">
+      <img src="../images/logo_pis.png" alt="logo" id="logo"/>
+      <div class="text">
+        <h1 id="header">PRAVANANDA INTERNATIONAL SCHOOL</h1>
+        <h3 id="text1">(An Educational Unit of Bharat Sevasharam Sang)</h3>
+        <h2 id="text2">School with a  difference</h2>
       </div>
-      <script src="js/lo"></script>
+      <img src="../images/guruji.jpg" alt="guru" id="guru"/>
+    </div>
+    <div class="container2">
+     <div class="lib">
+      <h1 id="heading">Library Management System</h1>
+      <form>
+        <div class="labels">
+          <label for="username">Username</label>
+          <input id="username"/>
+        </div>
+        <div class="labels">
+          <label for="password">Password</label>
+        <input id="password"/>
+        </div>
+      </form>
+      <button id="login">Login</button>
+     </div>
+    </div>
+  </div>
 </body>
 </html>
