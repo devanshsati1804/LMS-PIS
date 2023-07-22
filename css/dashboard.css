@@ -1,0 +1,32 @@
+.panel{
+    background-color: rgb(180, 98, 27);
+    
+    border-radius: 30px;
+
+    height: 300px;
+    width: 600px;
+  
+
+   
+    
+}
+.foo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+
+.btn{
+    background-color: wheat;
+    height: 32px;
+    margin-top: 25px;
+    margin-left: 28px;
+    width: 240px;
+    border-radius: 20px;
+    
+}
+body{
+    background-color: chocolate;
+}
