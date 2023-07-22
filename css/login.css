@@ -32,17 +32,18 @@
 #header{
     color: #D00;
     font-family: 'Inknut Antiqua';
-    
+    font-size: 30px;
 }
 #text1{
     color: #151EED;
     font-family: 'Inknut Antiqua';
-    font-size: 24px;
+    font-size: 23px;
+    
 }
 #text2{
     color: #B30000;
     font-family: 'Imperial Script',cursive;
-    font-size: 52px;
+    font-size: 38px;
 }
 .container2{
     background-image: url("../images/th.jpeg");
@@ -79,6 +80,9 @@ form{
 .labels{
     margin: 25px;
 }
+.label1{
+    margin: 20px;
+}
 #password{
     margin-left: 7px;
 }
@@ -93,3 +97,4 @@ input{
     height: 34px;
     font-size: 24px;
 }
+

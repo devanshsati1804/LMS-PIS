@@ -11,6 +11,7 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap');
   </style>
+  <script src="../js/login.js"></script>
 </head>
 <body>
   <div class="container">
@@ -26,7 +27,7 @@
     <div class="container2">
      <div class="lib">
       <h1 id="heading">Library Management System</h1>
-      <form>
+      <form id="loginForm">
         <div class="labels">
           <label for="username">Username</label>
           <input id="username"/>
@@ -35,9 +36,11 @@
           <label for="password">Password</label>
         <input id="password"/>
         </div>
+        <!--<button type="submit" id="login">Login</button>-->
+        <input id = b1 type="button" onclick="location.href='../html/dashboard.html';" value="Student Issuing" />
       </form>
-      <button id="login">Login</button>
-     </div>
+
+     
     </div>
   </div>
 </body>
