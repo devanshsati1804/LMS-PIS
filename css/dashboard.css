@@ -1,4 +1,18 @@
 .panel{
     background-color: rgb(180, 98, 27);
     margin: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 30px;
+    margin-left: 25%;
+    margin-right: 25%;
+    height: 300px;
+    width: 600px;
+}
+
+
+.btn{
+    background-color: antiquewhite;
+    background-size: auto;
+    
 }
