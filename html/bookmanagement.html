@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../css/login.css" rel="stylesheet">
-    <link href="../css/studentissueing.css" rel="stylesheet">
+    <link href="../css/bookmanagement.css" rel="stylesheet">
     <title>Book Inventory Management </title>
 </head>
 <body>
@@ -18,17 +18,68 @@
       </div>
       <img src="../images/guruji.jpg" alt="guru" id="guru"/>
     </div>
-    <div class="containerbox">
-      <form class = panel>
-         <div class="label1">
-           <label for="rollno">Roll No</label>
-           <input id="rollno"/>
-         </div>
-         <button id="Submit">Submit</button>
-      </form>
+    <nav class="navigation">
+      <button onclick="toggleSection('add')">Add Book</button>
+      <button onclick="toggleSection('remove')">Remove Element</button>
+      <button onclick="toggleSection('search')">Search Element</button>
+    </nav>
+  
+    <div class="sections">
+      <section id="add" class="section">
+        <!-- Add Element Section Content -->
+        
+        <form id = "entry">
+          <div id="box">
+            <label for="bookname">Name of Book</label>
+            <input id="bookname"/>
+            <label for="writer">Name of Author</label>
+            <input id="writer"/>
+          </div>
+          <label for="publisher">Publishing House</label>
+          <input id="publisher"/>
+          <label for="year">Year of Publishment</label>
+          <input id="year"/>
+          <label for="pages">Name of pages</label>
+          <input id="pages"/>
+          <label for="price">Cost of Book</label>
+          <input id="price"/>
+          <label for="price">Cost of Book</label>
+          <input id="price"/>
+          <button id="b1" type="submit">Enter</button>
+
+          
+          <!-- Your form inputs for adding an element go here -->
+        </form>
+      </section>
+  
+      <section id="remove" class="section">
+        <!-- Remove Element Section Content -->
+        <form id="delete">
+          <label id="t2" id="search ">Enter the book code</label>
+          <input  id="search">
+
+          <button id="b2" type="submit">Search</button>
+        </form>
+        
+        
+      </section>
+  
+      <section id="search" class="section">
+        <!-- Search Element Section Content -->
+        
+          <!-- Your form inputs for searching an element go here -->
+          <form id="search">
+            <label id="t3" id="search ">Enter the book code</label>
+            <input  id="search">
+  
+            <button id="b2" type="submit">Search</button>
+          </form>        
+        
+      </section>
+    
        
   </div>    
-  </div>
+  <script src="../js/bookmanagement.js"></script>
   
 </body>
 </html>
