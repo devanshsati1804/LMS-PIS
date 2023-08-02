@@ -1,5 +1,7 @@
 .panel{
-    background-color: rgb(180, 98, 27);
+    background-color: whitesmoke; 
+    border: solid 10px; 
+    align-content: center; 
     margin-top: 6%;
     padding-left: 40px;
     padding-right: 40px;
@@ -10,19 +12,25 @@
     width: 800px;
 }
 
+:hover.btn {
+    background-color: paleturquoise;
+    -ms-zoom-animation: 10px;
+}
 
 .btn{
-    background-color: rgb(163, 98, 13);
+    background-color: burlywood;
     background-size: auto;
     margin-left: 10%;
     margin-top: 3%;
     width: 300px;
     margin-bottom: 7%;
+    padding: 8px;
+    border-radius: 20px;
 
     
 }
 .background{
-    background-color: rgb(0, 215, 143);
+    background-image: rgb(0, 215, 143);
 }
 
 
