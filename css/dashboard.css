@@ -1,36 +1,30 @@
-.panel{
-    background-color: whitesmoke; 
-    border: solid 10px; 
-    align-content: center; 
-    margin-top: 6%;
-    padding-left: 40px;
-    padding-right: 40px;
-    border-radius: 30px;
-    margin-left: 21%;
-    margin-right: 25%;
-    height: 400px;
-    width: 800px;
-}
+.panel{         /* class for box of buttons */
+    background-color: rgb(255, 145, 0); 
+    border: 10px; 
+    border-radius: 40px;
+    box-sizing: flex;
+    max-width: 800px;
+    max-height: 590px;
+    margin: 45px;
+    }
 
 :hover.btn {
     background-color: paleturquoise;
     -ms-zoom-animation: 10px;
 }
 
-.btn{
+ .btn{       /*class for buttons */
     background-color: burlywood;
     background-size: auto;
-    margin-left: 10%;
-    margin-top: 3%;
     width: 300px;
-    margin-bottom: 7%;
-    padding: 8px;
+    padding: 5px;
+    margin: 35px;
     border-radius: 20px;
 
     
 }
-.background{
-    background-image: rgb(0, 215, 143);
+.body{
+    background-image: yellow;
 }
 
 

@@ -1,24 +1,16 @@
 #Submit{
-    width: 150px;
-    height: 60px;
+    margin: 10px;
+    
 }
 .panel{
-    background-color: rgba(122, 23, 23, 0.7);
-    display: flex;
-    margin-left: 27%;
-    margin-top: 5%;
-    
-   
-    align-items: center;
-    flex-direction: column;
-    height: 350px;
-    width: 650px;
-    border-radius: 20px;
-
-
+    background-color: rgb(255, 145, 0); 
+    border: 10px; 
+    border-radius: 40px;
+    box-sizing: flex;
+    max-width: 800px;
+    max-height: 590px;
+    margin: 45px;
 }
 .container{
-    background-color: chocolate;
-    
-    
+    background-color: white;
 }
