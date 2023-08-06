@@ -59,7 +59,7 @@ sub.onclick = function (event) {
       signInWithEmailAndPassword(auth, obj.email, obj.password)
         .then(function (_success) {
           mainContent.classList.add("login-true");
-          window.location = "../code/html/dashboard.html";
+          window.location = "code/html/dashboard.html";
         })
         .catch(function (err) {
           swal({
