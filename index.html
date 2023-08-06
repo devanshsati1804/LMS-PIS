@@ -1,50 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link href="code/css/login.css" rel="stylesheet">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap');
-  </style>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap');
-  </style>
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
-  
-</head>
-<body>
-  <div class="container">
-    <div class="nav">
-      <img src="code/images/logo_pis.png" alt="logo" id="logo"/>
-      <div class="text">
-        <h1 id="header">PRAVANANDA INTERNATIONAL SCHOOL</h1>
-        <h3 id="text1">(An Educational Unit of Bharat Sevasharam Sangha)</h3>
-        <h2 id="text2">School with a  difference</h2>
-      </div>
-      <img src="code/images/guruji.jpg" alt="guru" id="guru"/>
-    </div>
-    <div class="container2">
-     <div class="lib">
-      <h1 id="heading">Library Management System</h1>
-      <form id="loginForm">
-        <div class="labels">
-          <label for="username">Username</label>
-          <input id="username"/>
-        </div>
-        <div class="labels">
-          <label for="password">Password</label>
-        <input id="password"/>
-        </div>
-        <!-- <button type="submit" id="login">Login</button> -->
-        <input id = b1 type="button" onclick="location.href='code/html/dashboard.html';" value="Login" />
-      </form>
 
-     
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IMS - Admin Login</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.ico">
+
+  <link rel="stylesheet" href="code/css/login.css" />
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet" />
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <style>
+    .hide {
+      display: none;
+    }
+
+    .main-1 {
+      width: 19vw;
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+</head>
+
+<body onload="preloader()">
+  <!-- preloader -->
+  <div id="loading">
+    <img src="images/Spin-1s-200px.gif" />
   </div>
-  <script src="code/js/login.js"></script>
+
+  <script>
+    var preloaderr = document.getElementById('loading');
+    function preloader() {
+      preloaderr.style.display = 'none';
+    }
+  </script>
+
+  <div class="main-back">
+  </div>
+
+  <div class="nav">
+    <img src="code/images/logo_pis.png" alt="logo" id="logo"/>
+    <div class="text">
+      <h1 id="header">PRANAVANANDA INTERNATIONAL SCHOOL</h1>
+      <h3 id="text1">(An Educational Unit of Bharat Sevasharam Sangha)</h3>
+      <h2 id="text2">School with a  difference</h2>
+    </div>
+    <img src="code/images/guruji.jpg" alt="guru" id="guru"/>
+  </div>
+
+  
+
+    <div id="main" class="main-container">
+      <div class="container2">
+        
+        <form>
+          <div id="lib">
+          <div class="input-box">
+            <input id="user-id" type="text" name="" required="" />
+            <label>User ID</label>
+          </div>
+          <div class="input-box">
+            <input id="user-pass" type="password" name="" required="" />
+            <label>Password</label>
+          </div>
+          <button class="btn btn-dark" id="submit">Submit <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          </button>
+          <div class="main-1"><i class="loading-icon fa fa-spinner fa-spin hide"
+              style="color: aliceblue; size: 50px;"></i>
+          </div>
+        </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="logged-in"></div>
+  </div>
+
+
 </body>
+<script src="code/js/login.js" type="module"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
 </html>
