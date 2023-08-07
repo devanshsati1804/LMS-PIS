@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/login.css" rel="stylesheet">
+    <link href="../css/bookmanagement.css" rel="stylesheet">
+    <title>Book Inventory Management </title>
+</head>
+<body>
+  <div class="container">
+    <div class="nav">
+      <img src="../images/logo_pis.png" alt="logo" id="logo"/>
+      <div class="text">
+        <h1 id="header">PRAVANANDA INTERNATIONAL SCHOOL</h1>
+        <h2 id="text1">(An Educational Unit of Bharat Sevasharam Sangha)</h2>
+        <h3 id="text2">School with a  difference</h3>
+      </div>
+      <img src="../images/guruji.jpg" alt="guru" id="guru"/>
+    </div>
+    <nav class="navigation">
+      <button onclick="toggleSection('add')">Add Book</button>
+      <button onclick="toggleSection('remove')">Remove Element</button>
+      <button onclick="toggleSection('search')">Search Element</button>
+    </nav>
+  
+    <div class="sections">
+      <section id="add" class="section">
+        <!-- Add Element Section Content -->
+        
+        <form id = "entry" class="panel">
+          <div id="box">
+            <label for="bookname">Name of Book</label>
+            <input id="bookname" class="asd"/><br>
+            <label for="writer">Name of Author</label>
+            <input id="writer" class="asd"><br>
+         
+          <label for="publisher">Publishing House</label>
+          <input id="publisher" class="asd"/><br>
+          <label for="year">Year of Publishment</label>
+          <input id="year" class="asd"><br>
+          <label for="pages">Name of pages</label>
+          <input id="pages" class="asd"><br>
+          <label for="price">Cost of Book</label>
+          <input id="price" class="asd"><br>
+          <label for="price">Cost of Book</label>
+          <input id="price" class="asd"><br>
+          <button id="b1" type="submit">Enter</button>
+        </div>
+          
+          <!-- Your form inputs for adding an element go here -->
+        </form>
+      </section>
+  
+      <section id="remove" class="section">
+        <!-- Remove Element Section Content -->
+        <form id="delete" class="panel">
+          <label id="t2" id="search ">Enter the book code</label>
+          <input  id="search">
+
+          <button id="b2" type="submit">Search</button>
+        </form>
+        
+        
+      </section>
+  
+      <section id="search" class="section">
+        <!-- Search Element Section Content -->
+        
+          <!-- Your form inputs for searching an element go here -->
+          <form id="search">
+            <label id="t3" id="search ">Enter the book code</label>
+            <input  id="search">
+  
+            <button id="b2" type="submit">Search</button>
+          </form>        
+        
+      </section>
+    
+       
+  </div>    
+  <script src="../js/bookmanagement.js"></script>
+  
+</body>
+</html>
