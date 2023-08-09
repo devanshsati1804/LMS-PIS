@@ -1,0 +1,30 @@
+#Submit{
+    width: 110px;
+    height: 30px;
+    background-color: darkgoldenrod;
+    border-radius: 17px;
+    color: lightgray;
+}
+.panel{
+    background-color: rgba(122, 23, 23, 0.7);
+    display: flex;
+    margin-left: 27%;
+    margin-top: 5%;
+    
+   
+    align-items: center;
+    flex-direction: column;
+    height: 350px;
+    width: 650px;
+    border-radius: 20px;
+
+
+}
+
+label{
+    margin-right: 15px;
+    color: wheat;
+}
+body{
+    background-color: chocolate;
+}

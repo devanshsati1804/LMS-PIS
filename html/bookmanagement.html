@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/login.css" rel="stylesheet">
+    <link href="../css/bookmanagement.css" rel="stylesheet">
+    <title>Book Inventory Management </title>
+</head>
+<body>
+  <div class="container">
+    <div class="nav">
+      <img src="../images/logo_pis.png" alt="logo" id="logo"/>
+      <div class="text">
+        <h1 id="header">PRAVANANDA INTERNATIONAL SCHOOL</h1>
+        <h2 id="text1">(An Educational Unit of Bharat Sevasharam Sangha)</h2>
+        <h3 id="text2">School with a  difference</h3>
+      </div>
+      <img src="../images/guruji.jpg" alt="guru" id="guru"/>
+    </div>
+    <nav class="navigation">
+      <button onclick="toggleSection('add')">Add Book</button>
+      <button onclick="toggleSection('remove')">Remove Element</button>
+      <button onclick="toggleSection('search')">Search Element</button>
+    </nav>
+  
+    <div class="sections">
+      <section id="add" class="section">
+        <!-- Add Element Section Content -->
+        
+        <form id = "entry">
+          <div id="box">
+            <div id="foo">
+              <label id="booknames" for="bookname">Name of Book</label>
+              <input id="bookname"/><br/>
+            </div>
+            <div id="foo">
+              <label id="writers" for="writer">Name of Author</label>
+              <input id="writer"/><br/>
+            </div>
+           
+        
+         <div id="foo">
+          <label id="publishers" for="publisher">Publishing House</label>
+          <input id="publisher"/><br/>
+          </div>
+          <div id="foo">
+          <label id="years" for="year">Year of Publishment</label>
+          <input id="year"/><br/>
+          </div>
+          <div id="foo">
+          <label id="page" for="pages">Name of pages</label>
+          <input id="pages"/><br/>
+          </div>
+          <div id="foo">
+          <label for="price">Cost of Book</label>
+          <input id="price"/>
+
+        </div>
+        <button id="b1" type="submit">Enter</button>
+        </form>
+      </div>
+     
+   
+    </form>
+  </section>
+
+        
+
+          
+       
+      <section id="remove" class="section">
+        <!-- Remove Element Section Content -->
+        <div id="bar">
+          <form id="delete">
+            <label id="t2" for="search">Enter the book code</label>
+            <input id="search" />
+  
+        
+          </form>
+          <button id="b2" type="submit">Search</button>
+        </div>
+       
+       
+        
+        
+      </section>
+  
+      <section id="search" class="section">
+   
+          <form id="search">
+            <label id="t3" id="search ">Enter the book code</label>
+            <input  id="search">
+  
+            <button id="b2" type="submit">Search</button>
+          </form>        
+        
+      </section>
+    
+    </div>
+  </div> 
+    
+  <script src="../js/bookmanagement.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/login.css" rel="stylesheet">
+    <link href="../css/studentissueing.css" rel="stylesheet">
+    <title>Student Book Issuing </title>
+    <style>
+        .bookCollection{
+            display: flex;
+            flex-direction: row;
+            margin-top: 15px;
+        }
+        .book{
+            display: flex;
+            flex-direction: column;
+            margin-right: 25px;
+        }
+        .foo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        body{
+            color: white;
+        }
+        .panel{
+            height: 400px;
+            margin-bottom: 15px;
+        }
+        #book{
+            height: 250px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="nav">
+      <img src="../images/logo_pis.png" alt="logo" id="logo"/>
+      <div class="text">
+        <h1 id="header">PRAVANANDA INTERNATIONAL SCHOOL</h1>
+        <h2 id="text1">(An Educational Unit of Bharat Sevasharam Sangha)</h2>
+        <h3 id="text2">School with a  difference</h3>
+      </div>
+      <img src="../images/guruji.jpg" alt="guru" id="guru"/>
+    </div>
+    <div class="containerbox">
+      <div class="panel">
+        <h1>Currently Issued Books are:</h1>
+        <div class="bookCollection">
+            <div class="book">
+                <img id="book" src="https://tinyurl.com/55ns38ex" alt="book"/>
+                <h2>Iron Ambition</h2>
+        <h3>Mike Tyson</h3>
+
+            </div>
+            <div class="book">
+                <img id="book" src="https://tinyurl.com/55ns38ex" alt="book"/>
+                <h2>Iron Ambition</h2>
+        <h3>Mike Tyson</h3>
+
+            </div>
+            
+        </div>
+        
+       
+    </div>
+    <div class="foo">
+        <button id="Submit" type="button" onclick="location.href = './issuemethod.html'">Issue Book</button>
+    </div>
+     
+       
+  </div>    
+  </div>
+  
+</body>
+</html>
